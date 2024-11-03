@@ -122,4 +122,18 @@ class CalculatorTest {
 
     }
 
+    // zweiter roter Test
+    @Test
+    @DisplayName("schould display result when calculate Binary plus Unary ")
+    void testResultCalculateOfBinaryplusUnary(){
+        Calculator calculator = new Calculator();
+        calculator.pressDigitKey(5);
+        calculator.pressBinaryOperationKey("+");
+        calculator.pressDigitKey(4);
+        calculator.pressUnaryOperationKey("√");
+        calculator.pressEqualsKey();
+        String expected = "7";
+        String actual = calculator.readScreen();
+        assertEquals(expected, actual);
+    }
 }
