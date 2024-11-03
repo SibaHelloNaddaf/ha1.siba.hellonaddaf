@@ -109,6 +109,17 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    //Aufgabe2
+    @Test
+    @DisplayName("should display Error when trying to calculate 1/0")
+    void testInvertofZero(){
+        Calculator calculator = new Calculator();
+        calculator.pressDigitKey(0);
+        calculator.pressUnaryOperationKey("1/x");
+        String expected = "Error";
+        String actual = calculator.readScreen();
+        assertEquals(expected, actual);
 
+    }
 
 }
