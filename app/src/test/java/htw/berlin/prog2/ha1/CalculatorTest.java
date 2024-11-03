@@ -122,7 +122,7 @@ class CalculatorTest {
 
     }
 
-    // zweiter roter Test
+    // zweiter roter Test.
     @Test
     @DisplayName("schould display result when calculate Binary plus Unary ")
     void testResultCalculateOfBinaryplusUnary(){
