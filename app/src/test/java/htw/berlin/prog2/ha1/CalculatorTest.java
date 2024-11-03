@@ -109,7 +109,7 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
-    //Aufgabe2
+    //Aufgabe2 roter Test
     @Test
     @DisplayName("should display Error when trying to calculate 1/0")
     void testInvertofZero(){
